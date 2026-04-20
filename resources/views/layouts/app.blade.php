@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Book Reviews</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio">
+  </script>
 
   {{-- blade-formatter-disable --}}
   <style type="text/tailwindcss">
@@ -25,7 +26,7 @@
     }
 
     .filter-item-active {
-      @apply bg-white shadow-sm text-slate-800 flex w-full items-center justify-center rounded-md px-4 py-2 text-center text-sm font-medium;
+      @apply bg-white shadow-sm text-slate-800 flex w-full items-center justify-center rounded-md px-4 py-2 text-center text-sm font-semibold;
     }
 
     .book-item {
