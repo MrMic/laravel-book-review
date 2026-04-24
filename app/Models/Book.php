@@ -23,7 +23,7 @@ class Book extends Model
     // ______________________________________________________________________
     public function scopeTitle(Builder $query, string $title): Builder
     {
-        return $query->where('title', 'like', '%'.$title.'%');
+        return $query->where('title', 'like', '%' . $title . '%');
     }
 
     // ______________________________________________________________________

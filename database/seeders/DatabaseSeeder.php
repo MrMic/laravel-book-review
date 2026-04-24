@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
                     ->count($numReviews)
                     ->good()
                     ->for($book)
-                ->create();
+                    ->create();
             });
 
         Book::factory(33)
@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
                     ->count($numReviews)
                     ->average()
                     ->for($book)
-                ->create();
+                    ->create();
             });
 
         Book::factory(34)
@@ -49,7 +49,7 @@ class DatabaseSeeder extends Seeder
                     ->count($numReviews)
                     ->bad()
                     ->for($book)
-                ->create();
+                    ->create();
             });
     }
 }
