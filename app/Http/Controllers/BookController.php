@@ -66,7 +66,7 @@ class BookController extends Controller
     {
         $cacheKey = 'book:' . $book->id;
 
-        $book = cache()->remember($cacheKey, 3600, fn () => $book->load([
+        $book = cache()->remember($cacheKey, 3600, fn () => $book->loadAvg('reviews', 'rating')->load([
             'reviews' => fn ($query) => $query->latest(),
         ]));
 
